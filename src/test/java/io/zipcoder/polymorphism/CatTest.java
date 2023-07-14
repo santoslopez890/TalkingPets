@@ -7,29 +7,34 @@ public class CatTest {
     @Test
     public void speakTest(){
         //given
-        String expected="meow";
-        Cat cat=new Cat;
+        String expected="Meow";
+        Cat cat=new Cat(expected);
         //when
-        String actual=Cat.speak;
+        String actual=cat.speak();
         //then
         Assert.assertEquals(expected,actual);
 
     }
     @Test
     public void testGetName(){
+
         //given
-        Cat cat=new Cat;
-        cat.setName("bob");
-        String expected=cat.getName("bob");
+        String expected="bob";
+        Cat cat=new Cat();
+        cat.setName(expected);
+        //then
+        String actual=cat.getName();
+        //then
+        Assert.assertEquals(actual,expected);
 
 
     }
     @Test
     public void getInheritance(){
         //Given
-        Pet cat=new Cat();
+        Pet cat=new Cat("bob");
 
         Assert.assertTrue(cat instanceof Pet);
     }
-    public void
+
 }

@@ -6,7 +6,7 @@ public class PetTest {
     @Test
     public void getInheritance(){
         //Given
-        Pet cat=new Cat();
+        Pet cat=new Cat("bob");
 
         Assert.assertTrue(cat instanceof Pet);
     }
