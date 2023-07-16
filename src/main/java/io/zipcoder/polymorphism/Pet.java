@@ -1,6 +1,6 @@
 package io.zipcoder.polymorphism;
 
-public abstract class Pet {
+public abstract class Pet implements Animal{
     private String name;
     private int age;
 public Pet(){
@@ -18,4 +18,6 @@ public Pet(){
     public void setName(String name) {
         this.name=name;
     }
+
+
 }
